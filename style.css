@@ -5,13 +5,51 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.6;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Hero section */
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?technology,engineering') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  flex-direction: column;
   padding: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 700px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 header {
@@ -19,8 +57,10 @@ header {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  margin-bottom: 30px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -31,27 +71,30 @@ header h1 {
 nav a {
   color: #ecf0f1;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
+  color: #1abc9c;
   text-decoration: underline;
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   background: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  margin-top: 40px;
 }
 
 h2 {
   color: #2c3e50;
-  margin-bottom: 15px;
-  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 ul {
@@ -61,14 +104,30 @@ ul {
 
 ul li {
   background: #ecf0f1;
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  color: #7f8c8d;
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
   font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
 }
