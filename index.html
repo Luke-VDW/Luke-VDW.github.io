@@ -933,6 +933,7 @@
     <div class="container">
       <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
+        <!-- Project Card 1: Line Following Robot -->
         <div class="project-card">
           <div class="project-img">
             <img src="assets/micro_v2.jpg" alt="Line Following Robot">
@@ -981,10 +982,10 @@
                 </ul>
 
                 <div class="project-links">
-                  <a href="https://github.com/your-username/line-follower" class="btn" target="_blank">
+                  <a href="https://github.com/Luke-VDW/micromouse" class="btn" target="_blank">
                     <i class="fab fa-github"></i> GitHub Repository
                   </a>
-                  <a href="projects/line-follower-report.pdf" class="btn btn-outline" download>
+                  <a href="assets/EEE3099S_Group_8_Final_Report.pdf" class="btn btn-outline" download>
                     <i class="fas fa-file-pdf"></i> Project Report
                   </a>
                 </div>
@@ -993,13 +994,17 @@
           </div>
         </div>
         
+        <!-- Project Card 2: Rocket Trajectory Controller -->
         <div class="project-card">
           <div class="project-img">
             <img src="assets/rocket_v2.jpg" alt="Rocket Trajectory Controller">
           </div>
           <div class="project-content">
             <h3>Rocket Trajectory Controller</h3>
-            <p>Designed and implemented a guidance and control system for a rocket tasked with intercepting a moving asteroid. This project required advanced control theory, nonlinear dynamics modeling, and robust handling of noisy trajectory data.</p>
+            <p>
+              Designed and implemented a guidance and control system for a rocket tasked with intercepting a moving asteroid. 
+              This project required advanced control theory, nonlinear dynamics modeling, and robust handling of noisy trajectory data.
+            </p>
             <div class="project-tags">
               <span class="project-tag">MATLAB</span>
               <span class="project-tag">Simulink</span>
@@ -1014,36 +1019,28 @@
                 <h4>Project Overview</h4>
                 <p>
                   The objective of this project was to simulate and design a control system capable of guiding a rocket to intercept a moving asteroid. 
-                  To achieve this, I developed a nonlinear model of the rocket’s translational and rotational dynamics and designed a Linear Quadratic Regulator (LQR) to ensure stable, efficient trajectory correction.
+                  To achieve this, I developed a nonlinear model of the rocket's translational and rotational dynamics and designed a Linear Quadratic Regulator (LQR) to ensure stable, efficient trajectory correction.
                 </p>
-
-                <h4>Key Challenges</h4>
-                <ul>
-                  <li>Modeling coupled translational and rotational dynamics of a rigid body rocket.</li>
-                  <li>Handling trajectory uncertainty due to noisy asteroid position data.</li>
-                  <li>Ensuring interception within strict angular approach constraints (±30° window).</li>
-                  <li>Balancing fuel efficiency with control accuracy in the LQR cost function.</li>
-                </ul>
 
                 <h4>Technical Details</h4>
                 <ul>
-                  <li><strong>Nonlinear System Modeling:</strong> Rocket modeled as a rigid body with thrust applied at a distance, capturing both force and torque effects.</li>
-                  <li><strong>State-Space Representation:</strong> Linearized around equilibrium points for LQR design, while nonlinear simulations validated controller robustness.</li>
-                  <li><strong>LQR Controller Design:</strong> Designed state-feedback gains to optimize the trade-off between control effort and trajectory tracking performance.</li>
-                  <li><strong>Noise Robustness:</strong> Added stochastic variations to asteroid trajectory data to test performance under uncertainty.</li>
-                  <li><strong>3D Visualization:</strong> Developed MATLAB visualizations showing successful rocket interception and trajectory correction.</li>
+                  <li>Nonlinear system modeling of rocket translational and rotational dynamics</li>
+                  <li>Linear Quadratic Regulator (LQR) design for optimal trajectory control</li>
+                  <li>State-space representation and linearization around equilibrium points</li>
+                  <li>Robust handling of noisy asteroid trajectory data</li>
+                  <li>3D visualization of rocket interception and trajectory correction</li>
                 </ul>
 
-                <h4>Outcomes</h4>
-                <p>
-                  The rocket successfully intercepted the asteroid within the allowed angular constraints, even under noisy conditions. The LQR controller achieved smooth and efficient corrections with minimal overshoot, demonstrating robustness and reliability.
-                </p>
+                <h4>Key Outcomes</h4>
+                <ul>
+                  <li>Successfully intercepted the asteroid within allowed angular constraints (±30° window)</li>
+                  <li>LQR controller achieved smooth and efficient corrections with minimal overshoot</li>
+                  <li>Demonstrated robustness and reliability under noisy conditions</li>
+                  <li>Balanced fuel efficiency with control accuracy in the LQR cost function</li>
+                </ul>
 
                 <div class="project-links">
-                  <a href="https://github.com/your-username/rocket-controller" class="btn" target="_blank">
-                    <i class="fab fa-github"></i> GitHub Repository
-                  </a>
-                  <a href="projects/rocket-controller-report.pdf" class="btn btn-outline" download>
+                  <a href="assets/VWLLUK003_EEE4119F_Report.pdf" class="btn btn-outline" download>
                     <i class="fas fa-file-pdf"></i> Project Report
                   </a>
                 </div>
@@ -1052,7 +1049,7 @@
           </div>
         </div>
 
-        
+        <!-- Project Card 3: Smart Bird Perch -->
         <div class="project-card">
           <div class="project-img">
             <img src="assets/perch_v2.jpg" alt="Smart Bird Perch">
@@ -1085,26 +1082,26 @@
                 
                 <h4>Technical Details</h4>
                 <ul>
-                  <li><strong>Weight Sensing:</strong> Integrated load cell sensors calibrated to measure weights up to 1.6 kg with high precision.</li>
-                  <li><strong>Controller:</strong> STM32 microcontroller processes sensor input and transmits data for logging and analysis.</li>
-                  <li><strong>Durability:</strong> Designed to withstand harsh, salty, and sandy coastal environments.</li>
-                  <li><strong>Low Power:</strong> Optimized for extended field deployment with minimal maintenance requirements.</li>
-                  <li><strong>Structural Design:</strong> Stable on both rocky and sandy terrain while ensuring bird comfort and natural use.</li>
+                  <li>STM32 microcontroller processes sensor input and transmits data</li>
+                  <li>Load cell sensors calibrated to measure weights up to 1.6 kg with high precision</li>
+                  <li>Designed to withstand harsh, salty, and sandy coastal environments</li>
+                  <li>Optimized for extended field deployment with minimal maintenance requirements</li>
+                  <li>Stable on both rocky and sandy terrain while ensuring bird comfort</li>
                 </ul>
                 
-                <h4>Applications</h4>
-                <p>
-                  The Smart Bird Perch contributes to wildlife monitoring by giving conservationists 
-                  real-time data on bird health without invasive techniques. Its lightweight and rugged 
-                  design allow it to be used across various coastal regions, making it a valuable tool 
-                  for ecological research and biodiversity protection.
-                </p>
+                <h4>Key Outcomes</h4>
+                <ul>
+                  <li>Provides real-time data on bird health without invasive techniques</li>
+                  <li>Lightweight and rugged design allows use across various coastal regions</li>
+                  <li>Contributes to wildlife monitoring and biodiversity protection</li>
+                  <li>Valuable tool for ecological research and conservation efforts</li>
+                </ul>
                 
                 <div class="project-links">
-                  <a href="https://github.com/your-username/smart-bird-perch" class="btn" target="_blank">
+                  <a href="https://github.com/Luke-VDW/AvianMassObservationandAnalysisNode" class="btn" target="_blank">
                     <i class="fab fa-github"></i> GitHub Repository
                   </a>
-                  <a href="projects/smart-bird-perch-report.pdf" class="btn btn-outline" download>
+                  <a href="assets/EEE4113F_2025_Final_Report_Group_35_SFRREN001_TRCGRI001_VWLLUK003 (2).pdf" class="btn btn-outline" download>
                     <i class="fas fa-file-pdf"></i> Project Report
                   </a>
                 </div>
@@ -1116,6 +1113,7 @@
     </div>
   </section>
 
+  
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
