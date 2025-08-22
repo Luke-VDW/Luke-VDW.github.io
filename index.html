@@ -939,36 +939,47 @@
           </div>
           <div class="project-content">
             <h3>Line Following Robot</h3>
-            <p>Embedded C project using STM32. Designed, built, and programmed a robot to follow a line using IR sensors and PWM control.</p>
+            <p>
+              Embedded C project on the STM32 platform. Designed, built, and programmed an autonomous robot capable of detecting and 
+              following a line using infrared sensors, PWM motor control, and a PID feedback algorithm.
+            </p>
             <div class="project-tags">
               <span class="project-tag">Embedded C</span>
               <span class="project-tag">STM32</span>
               <span class="project-tag">Robotics</span>
               <span class="project-tag">PID Control</span>
+              <span class="project-tag">PCB Design</span>
             </div>
             <button class="btn btn-outline view-details-btn">View Details</button>
-            
+
             <div class="project-details">
               <div class="project-details-content">
                 <h4>Project Overview</h4>
-                <p>This project involved designing and building an autonomous robot capable of following a line on the ground. The robot uses infrared sensors to detect the line and a PID controller to adjust its movement.</p>
-                
-                <div class="project-gallery">
-                  <img src="https://placehold.co/400x300/3498db/ffffff?text=Robot+Design" alt="Robot Design">
-                  <img src="https://placehold.co/400x300/3498db/ffffff?text=Circuit+Diagram" alt="Circuit Diagram">
-                  <img src="https://placehold.co/400x300/3498db/ffffff?text=Testing+Setup" alt="Testing Setup">
-                  <img src="https://placehold.co/400x300/3498db/ffffff?text=Final+Product" alt="Final Product">
-                </div>
-                
+                <p>
+                  This project involved developing a small-scale autonomous robot to demonstrate real-time control and embedded systems integration. 
+                  The robot follows a black line on a light surface using an array of infrared sensors to detect deviations from the path. 
+                  A PID controller adjusts the motor outputs to ensure smooth turns, quick correction, and minimal overshoot. 
+                  The goal was to create a robust and reliable system that could handle both straight paths and sharp curves.
+                </p>
+
                 <h4>Technical Details</h4>
                 <ul>
-                  <li>STM32F4 Discovery board</li>
-                  <li>5x IR reflectance sensors</li>
-                  <li>PID control algorithm</li>
-                  <li>PWM motor control</li>
-                  <li>Custom PCB design</li>
+                  <li>STM32F4 Discovery board as main controller</li>
+                  <li>5x IR reflectance sensors for line detection</li>
+                  <li>PID algorithm implemented in Embedded C for real-time error correction</li>
+                  <li>Two DC motors with PWM-based speed and direction control</li>
+                  <li>Custom PCB for clean sensor integration and motor driver connections</li>
+                  <li>Chassis designed for stability and smooth maneuvering</li>
                 </ul>
-                
+
+                <h4>Key Outcomes</h4>
+                <ul>
+                  <li>Improved understanding of control theory and PID tuning in practice</li>
+                  <li>Hands-on experience with STM32 peripheral configuration (ADC, timers, PWM)</li>
+                  <li>Demonstrated integration of sensors, actuators, and embedded software</li>
+                  <li>Applied circuit design skills to create a functional PCB</li>
+                </ul>
+
                 <div class="project-links">
                   <a href="https://github.com/your-username/line-follower" class="btn" target="_blank">
                     <i class="fab fa-github"></i> GitHub Repository
@@ -988,34 +999,46 @@
           </div>
           <div class="project-content">
             <h3>Rocket Trajectory Controller</h3>
-            <p>Used MATLAB and Simulink to guide a rocket to intercept a moving asteroid using LQR control. Involved nonlinear modeling and noise-robust tracking.</p>
+            <p>Designed and implemented a guidance and control system for a rocket tasked with intercepting a moving asteroid. This project required advanced control theory, nonlinear dynamics modeling, and robust handling of noisy trajectory data.</p>
             <div class="project-tags">
               <span class="project-tag">MATLAB</span>
               <span class="project-tag">Simulink</span>
               <span class="project-tag">Control Systems</span>
               <span class="project-tag">LQR</span>
+              <span class="project-tag">Trajectory Optimization</span>
             </div>
             <button class="btn btn-outline view-details-btn">View Details</button>
-            
+
             <div class="project-details">
               <div class="project-details-content">
                 <h4>Project Overview</h4>
-                <p>This project focused on developing a control system for rocket trajectory optimization. The goal was to intercept a moving asteroid using Linear Quadratic Regulator (LQR) control theory.</p>
-                
-                <div class="project-gallery">
-                  <img src="https://placehold.co/400x300/e74c3c/ffffff?text=Simulink+Model" alt="Simulink Model">
-                  <img src="https://placehold.co/400x300/e74c3c/ffffff?text=Trajectory+Plot" alt="Trajectory Plot">
-                </div>
-                
+                <p>
+                  The objective of this project was to simulate and design a control system capable of guiding a rocket to intercept a moving asteroid. 
+                  To achieve this, I developed a nonlinear model of the rocket’s translational and rotational dynamics and designed a Linear Quadratic Regulator (LQR) to ensure stable, efficient trajectory correction.
+                </p>
+
+                <h4>Key Challenges</h4>
+                <ul>
+                  <li>Modeling coupled translational and rotational dynamics of a rigid body rocket.</li>
+                  <li>Handling trajectory uncertainty due to noisy asteroid position data.</li>
+                  <li>Ensuring interception within strict angular approach constraints (±30° window).</li>
+                  <li>Balancing fuel efficiency with control accuracy in the LQR cost function.</li>
+                </ul>
+
                 <h4>Technical Details</h4>
                 <ul>
-                  <li>MATLAB & Simulink implementation</li>
-                  <li>LQR control algorithm</li>
-                  <li>Nonlinear system modeling</li>
-                  <li>Noise robustness analysis</li>
-                  <li>3D trajectory simulation</li>
+                  <li><strong>Nonlinear System Modeling:</strong> Rocket modeled as a rigid body with thrust applied at a distance, capturing both force and torque effects.</li>
+                  <li><strong>State-Space Representation:</strong> Linearized around equilibrium points for LQR design, while nonlinear simulations validated controller robustness.</li>
+                  <li><strong>LQR Controller Design:</strong> Designed state-feedback gains to optimize the trade-off between control effort and trajectory tracking performance.</li>
+                  <li><strong>Noise Robustness:</strong> Added stochastic variations to asteroid trajectory data to test performance under uncertainty.</li>
+                  <li><strong>3D Visualization:</strong> Developed MATLAB visualizations showing successful rocket interception and trajectory correction.</li>
                 </ul>
-                
+
+                <h4>Outcomes</h4>
+                <p>
+                  The rocket successfully intercepted the asteroid within the allowed angular constraints, even under noisy conditions. The LQR controller achieved smooth and efficient corrections with minimal overshoot, demonstrating robustness and reliability.
+                </p>
+
                 <div class="project-links">
                   <a href="https://github.com/your-username/rocket-controller" class="btn" target="_blank">
                     <i class="fab fa-github"></i> GitHub Repository
@@ -1028,14 +1051,19 @@
             </div>
           </div>
         </div>
+
         
         <div class="project-card">
           <div class="project-img">
-            <img src="assets/perch_v2.jpg" alt="Smart Bird Pirch">
+            <img src="assets/perch_v2.jpg" alt="Smart Bird Perch">
           </div>
           <div class="project-content">
             <h3>Smart Bird Perch</h3>
-            <p>Designed and built a semi-permanent perch that tracks bird weight in real time. The system is stable on rocky and sandy coastal terrain and supports birds up to 1.6 kg.</p>
+            <p>
+              Designed and built a semi-permanent perch for coastal bird monitoring that tracks bird weight 
+              in real time. The system is rugged enough for rocky and sandy shorelines while remaining sensitive 
+              enough to capture subtle weight variations, supporting birds up to 1.6 kg.
+            </p>
             <div class="project-tags">
               <span class="project-tag">Embedded Systems</span>
               <span class="project-tag">Sensors</span>
@@ -1048,24 +1076,29 @@
               <div class="project-details-content">
                 <h4>Project Overview</h4>
                 <p>
-                  This project involved developing a smart perch for wild coastal birds that can measure weight instantly when a bird lands. 
-                  The system is designed for rugged outdoor use near the ocean, providing reliable data for conservation research.
+                  This project was created in collaboration with a conservation initiative focusing on 
+                  seabird populations along the South African coast. The perch enables researchers to 
+                  passively collect accurate weight data whenever birds land, providing insights into 
+                  seasonal feeding patterns, health trends, and environmental impacts. Its semi-permanent 
+                  design makes it easy to deploy and relocate without causing environmental damage.
                 </p>
-                
-                <div class="project-gallery">
-                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Perch+Prototype" alt="Bird Perch Prototype">
-                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Sensor+Integration" alt="Sensor Integration">
-                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Field+Testing" alt="Field Testing">
-                </div>
                 
                 <h4>Technical Details</h4>
                 <ul>
-                  <li>Load cell sensors for real-time weight measurement</li>
-                  <li>STM32 microcontroller for data processing</li>
-                  <li>Low-power design for field deployment</li>
-                  <li>Stable structure for rocky and sandy terrain</li>
-                  <li>Supports birds weighing up to 1.6 kg</li>
+                  <li><strong>Weight Sensing:</strong> Integrated load cell sensors calibrated to measure weights up to 1.6 kg with high precision.</li>
+                  <li><strong>Controller:</strong> STM32 microcontroller processes sensor input and transmits data for logging and analysis.</li>
+                  <li><strong>Durability:</strong> Designed to withstand harsh, salty, and sandy coastal environments.</li>
+                  <li><strong>Low Power:</strong> Optimized for extended field deployment with minimal maintenance requirements.</li>
+                  <li><strong>Structural Design:</strong> Stable on both rocky and sandy terrain while ensuring bird comfort and natural use.</li>
                 </ul>
+                
+                <h4>Applications</h4>
+                <p>
+                  The Smart Bird Perch contributes to wildlife monitoring by giving conservationists 
+                  real-time data on bird health without invasive techniques. Its lightweight and rugged 
+                  design allow it to be used across various coastal regions, making it a valuable tool 
+                  for ecological research and biodiversity protection.
+                </p>
                 
                 <div class="project-links">
                   <a href="https://github.com/your-username/smart-bird-perch" class="btn" target="_blank">
@@ -1078,7 +1111,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -1096,7 +1128,7 @@
             </div>
             <div>
               <h3>Email</h3>
-              <p>your.email@example.com</p>
+              <p>lukevanderwalt1@gmail.com</p>
             </div>
           </div>
           
@@ -1106,7 +1138,7 @@
             </div>
             <div>
               <h3>Location</h3>
-              <p>City, Country</p>
+              <p>Cape Town, South Africa</p>
             </div>
           </div>
           
@@ -1116,7 +1148,7 @@
             </div>
             <div>
               <h3>LinkedIn</h3>
-              <p><a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+              <p><a href="https://www.linkedin.com/in/luke-van-der-walt-8b3210251/">https://www.linkedin.com/luke-van-der-walt</a></p>
             </div>
           </div>
         </div>
