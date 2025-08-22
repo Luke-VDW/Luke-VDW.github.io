@@ -456,12 +456,17 @@
     
     /* Skills Section */
     .skills-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 30px;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
     }
     
     .skill-category {
+      flex: 1 1 300px;
+      max-width: 320px;
       background: white;
       padding: 25px;
       border-radius: 10px;
@@ -941,8 +946,8 @@
           <div class="project-content">
             <h3>Line Following Robot</h3>
             <p>
-              Embedded C project on the STM32 platform. Designed, built, and programmed an autonomous robot capable of detecting and 
-              following a line using infrared sensors, PWM motor control, and a PID feedback algorithm.
+              Embedded C project on the STM32 platform. Designed, built, and programmed an autonomous robot capable of detecting 
+              and following a line using infrared sensors, PWM motor control, and a PID feedback algorithm.
             </p>
             <div class="project-tags">
               <span class="project-tag">Embedded C</span>
@@ -970,7 +975,6 @@
                   <li>PID algorithm implemented in Embedded C for real-time error correction</li>
                   <li>Two DC motors with PWM-based speed and direction control</li>
                   <li>Custom PCB for clean sensor integration and motor driver connections</li>
-                  <li>Chassis designed for stability and smooth maneuvering</li>
                 </ul>
 
                 <h4>Key Outcomes</h4>
@@ -1002,7 +1006,7 @@
           <div class="project-content">
             <h3>Rocket Trajectory Controller</h3>
             <p>
-              Designed and implemented a guidance and control system for a rocket tasked with intercepting a moving asteroid. 
+              Designed and implemented a guidance and control system for a simulated rocket tasked with intercepting a moving asteroid. 
               This project required advanced control theory, nonlinear dynamics modeling, and robust handling of noisy trajectory data.
             </p>
             <div class="project-tags">
@@ -1028,15 +1032,13 @@
                   <li>Linear Quadratic Regulator (LQR) design for optimal trajectory control</li>
                   <li>State-space representation and linearization around equilibrium points</li>
                   <li>Robust handling of noisy asteroid trajectory data</li>
-                  <li>3D visualization of rocket interception and trajectory correction</li>
                 </ul>
 
                 <h4>Key Outcomes</h4>
                 <ul>
-                  <li>Successfully intercepted the asteroid within allowed angular constraints (±30° window)</li>
+                  <li>Successfully intercepted the asteroid within allowed angular constraints</li>
                   <li>LQR controller achieved smooth and efficient corrections with minimal overshoot</li>
                   <li>Demonstrated robustness and reliability under noisy conditions</li>
-                  <li>Balanced fuel efficiency with control accuracy in the LQR cost function</li>
                 </ul>
 
                 <div class="project-links">
@@ -1059,7 +1061,7 @@
             <p>
               Designed and built a semi-permanent perch for coastal bird monitoring that tracks bird weight 
               in real time. The system is rugged enough for rocky and sandy shorelines while remaining sensitive 
-              enough to capture subtle weight variations, supporting birds up to 1.6 kg.
+              enough to capture subtle weight variations, cormorant birds up to 1.6 kg.
             </p>
             <div class="project-tags">
               <span class="project-tag">Embedded Systems</span>
@@ -1082,11 +1084,10 @@
                 
                 <h4>Technical Details</h4>
                 <ul>
-                  <li>STM32 microcontroller processes sensor input and transmits data</li>
+                  <li>ESP32 microcontroller processes sensor input and transmits data</li>
                   <li>Load cell sensors calibrated to measure weights up to 1.6 kg with high precision</li>
                   <li>Designed to withstand harsh, salty, and sandy coastal environments</li>
                   <li>Optimized for extended field deployment with minimal maintenance requirements</li>
-                  <li>Stable on both rocky and sandy terrain while ensuring bird comfort</li>
                 </ul>
                 
                 <h4>Key Outcomes</h4>
@@ -1094,7 +1095,6 @@
                   <li>Provides real-time data on bird health without invasive techniques</li>
                   <li>Lightweight and rugged design allows use across various coastal regions</li>
                   <li>Contributes to wildlife monitoring and biodiversity protection</li>
-                  <li>Valuable tool for ecological research and conservation efforts</li>
                 </ul>
                 
                 <div class="project-links">
