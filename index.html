@@ -255,17 +255,18 @@
       margin-top: 20px;
     }
     
-    /* .about-details {
+    .about-details {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease;
-    } */
-    .about-details {
-      margin-top: 0rem; /* Adds a gap between about text and details */
+    }
+
+    /* .about-details {
+      margin-top: 0rem; 
       max-height: none;
       overflow: visible;
       transition: none;
-    }
+    } */
     
     .about-details.active {
       max-height: 1000px;
@@ -725,7 +726,7 @@
   <section class="hero" id="home">
     <div class="hero-content">
       <h1>Hello world! I'm Luke</h1>
-      <p>An engineering student passionate about control systems, embedded development, and innovative problem-solving.</p>
+      <p>An engineering student passionate about innovative problem-solving and community outreach.</p>
       <div class="hero-btns">
         <!-- <a href="#projects" class="btn">View My Work</a>
         <a href="#contact" class="btn btn-outline">Contact Me</a> -->
@@ -745,29 +746,30 @@
           <img src="assets/me.jpg" alt="Luke V">
         </div>
         <div class="about-text">
-          <p>I am a final year engineering student with a passion for problem-solving and innovation. 
-            I have embraced the path of engineering because it allows me to explore challenging projects and develop 
-            practical solutions that can make a difference to poeples lives.</p>
-          <p>My experience spans areas such as embedded systems, control theory, 
-            and hardware design. I enjoy applying my skills to complex problems and learning new technologies along the way.</p>
+          <p>I am a final year engineering student with a passion for problem-solving and innovation. My experience spans areas such as embedded systems, control theory, 
+            and hardware design. I value engineering because it allows me to explore challenging projects and develop 
+            practical solutions that can make a difference to peoples' lives.</p>
+          
+          <div class="about-btns">
+            <button class="btn btn-outline view-more-btn">Tell Me More</button>
+            <a href="assets/Luke van der Walt CV.pdf" class="btn btn-outline" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn">Get In Touch</a>
+          </div>
 
           <div class="about-details">
             <div class="about-details-content">
               <h4>Hobbies & Interests</h4>
               <p>When I'm not studying or working on projects, I enjoy a variety of activities that help me maintain a balanced lifestyle and continue learning.</p>
               <ul>
-                <li><strong>Church:</strong> My Catholic faith plays a major role in my life. I volunteer at my local parish, helping organize community events, 
-                  assisting leading a youth program, and contributing to initiatives that support those in need. This allows me to connect with people and give back to the community in meaningful ways.</li>
+                <li><strong>Church:</strong> My faith plays a big role in my life. I volunteer at my parish, helping with events, youth programs, and community initiatives.</li>
 
-                <li><strong>Arts:</strong> I have a strong appreciation for the arts, particularly music and visual arts. 
-                  I enjoy playing the saxophone in my church band, which gives me an opportunity to perform and 
-                  collaborate with others. I also occasionally enjoy oil painting and light Photoshop work.</li>
+                <li><strong>Arts:</strong> I enjoy music and visual arts. I play saxophone in my church band and also like painting and light Photoshop work.</li>
 
-                <li><strong>Activities:</strong> Hiking, camping, rock climbing and longboarding are some of my favorite 
-                  ways to recharge and find inspiration. I love staying active and exercise regularly.</li>
+                <li><strong>Activities:</strong> I recharge through hiking, camping, rock climbing, and longboarding, and I stay active with regular exercise.</li>
 
-                <li><strong>Projects:</strong> I enjoy working on personal projects. These projects range from working on cars to testing chemical experiments.
-                  Most commonly, they involve me taking apart appliances or trying to fix things around the house. </li>
+                <li><strong>Projects:</strong> I work on personal projects ranging from cars to small experiments, often taking things apart or fixing appliances at home.</li>
 
               </ul>
               <div class="about-gallery">
@@ -783,12 +785,6 @@
             </div>
           </div>
 
-          <div class="about-btns">
-            <a href="#contact" class="btn">Get In Touch</a>
-            <a href="assets/Luke van der Walt CV.pdf" class="btn btn-outline" download>
-              <i class="fas fa-download"></i> Download CV
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -825,102 +821,112 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">My Skills</h2>
-      <div class="skills-container">
-        <div class="skill-category">
-          <h3><i class="fas fa-microchip"></i> Technical Skills</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <i class="fab fa-cuttlefish"></i>
-              <span>Embedded C / STM32</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-project-diagram"></i>
-              <span>MATLAB & Simulink</span>
-            </li>
-            <li class="skill-item">
-              <i class="fab fa-python"></i>
-              <span>Python & PyTorch</span>
-            </li>
-            <li class="skill-item">
-              <i class="fab fa-git-alt"></i>
-              <span>Git & GitHub</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-code"></i>
-              <span>C++</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-bolt"></i>
-              <span>Circuit Design</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="skill-category">
-          <h3><i class="fas fa-laptop-code"></i> Software & Tools</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <i class="fas fa-cube"></i>
-              <span>SolidWorks</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-wrench"></i>
-              <span>AutoCAD</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-wave-square"></i>
-              <span>LTspice</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-terminal"></i>
-              <span>VSCode</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-cogs"></i>
-              <span>STM32CubeIDE</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-desktop"></i>
-              <span>LabVIEW</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="skill-category">
-          <h3><i class="fas fa-people-carry"></i> Soft Skills</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <i class="fas fa-users"></i>
-              <span>Teamwork</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-puzzle-piece"></i>
-              <span>Problem Solving</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-exchange-alt"></i>
-              <span>Adaptability</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-comments"></i>
-              <span>Communication</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-tasks"></i>
-              <span>Project Management</span>
-            </li>
-            <li class="skill-item">
-              <i class="fas fa-lightbulb"></i>
-              <span>Creative Thinking</span>
-            </li>
-          </ul>
-        </div>
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+
+      <!-- Technical Skills -->
+      <div class="skill-category">
+        <h3><i class="fas fa-microchip"></i> Technical Skills</h3>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <i class="fas fa-microchip"></i>
+            <span>Embedded Systems (STM32, ESP32)</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-bolt"></i>
+            <span>PCB Design & Circuit Prototyping</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-tools"></i>
+            <span>Basic Welding & Machining</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-robot"></i>
+            <span>Automation & Control</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-code"></i>
+            <span>Coding & Scripting</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-hammer"></i>
+            <span>Hand & Power Tool Proficiency</span>
+          </li>
+        </ul>
       </div>
+
+      <!-- Software & Literacy -->
+      <div class="skill-category">
+        <h3><i class="fas fa-laptop-code"></i> Software & Literacy</h3>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </li>
+          <li class="skill-item">
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-code"></i>
+            <span>C Programming</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-square-root-alt"></i>
+            <span>MATLAB & Simulink</span>
+          </li>
+          <li class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <span>Git & GitHub</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-cube"></i>
+            <span>3D Modelling (SolidWorks, AutoCAD)</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-desktop"></i>
+            <span>Microsoft Office Suite</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category">
+        <h3><i class="fas fa-people-carry"></i> Soft Skills</h3>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <i class="fas fa-users"></i>
+            <span>Teamwork</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Problem Solving</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-exchange-alt"></i>
+            <span>Adaptability</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-comments"></i>
+            <span>Communication</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-lightbulb"></i>
+            <span>Creative Thinking</span>
+          </li>
+          <li class="skill-item">
+            <i class="fas fa-layer-group"></i>
+            <span>Organization</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- Projects Section -->
   <section id="projects">
@@ -929,7 +935,7 @@
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-img">
-            <img src="https://placehold.co/800x300/3498db/ffffff?text=Line+Following+Robot" alt="Line Following Robot">
+            <img src="assets/micro.jpg" alt="Line Following Robot">
           </div>
           <div class="project-content">
             <h3>Line Following Robot</h3>
@@ -978,7 +984,7 @@
         
         <div class="project-card">
           <div class="project-img">
-            <img src="https://placehold.co/800x300/e74c3c/ffffff?text=Rocket+Trajectory+Controller" alt="Rocket Trajectory Controller">
+            <img src="assets/rocket.jpg" alt="Rocket Trajectory Controller">
           </div>
           <div class="project-content">
             <h3>Rocket Trajectory Controller</h3>
@@ -1025,50 +1031,54 @@
         
         <div class="project-card">
           <div class="project-img">
-            <img src="https://placehold.co/800x300/2c3e50/ffffff?text=IoT+Smart+Home+System" alt="Smart Home System">
+            <img src="assets/rocket.jpg" alt="Smart Bird Pirch">
           </div>
           <div class="project-content">
-            <h3>IoT Smart Home System</h3>
-            <p>Developed a smart home control system using ESP32 with sensor networks and a custom mobile app for monitoring and control.</p>
+            <h3>Smart Bird Perch</h3>
+            <p>Designed and built a semi-permanent perch that tracks bird weight in real time. The system is stable on rocky and sandy coastal terrain and supports birds up to 1.6 kg.</p>
             <div class="project-tags">
+              <span class="project-tag">Embedded Systems</span>
+              <span class="project-tag">Sensors</span>
               <span class="project-tag">IoT</span>
-              <span class="project-tag">ESP32</span>
-              <span class="project-tag">Mobile App</span>
-              <span class="project-tag">Wireless</span>
+              <span class="project-tag">Conservation</span>
             </div>
             <button class="btn btn-outline view-details-btn">View Details</button>
             
             <div class="project-details">
               <div class="project-details-content">
                 <h4>Project Overview</h4>
-                <p>This IoT project involved creating a comprehensive smart home system with environmental monitoring, device control, and a mobile application interface.</p>
+                <p>
+                  This project involved developing a smart perch for wild coastal birds that can measure weight instantly when a bird lands. 
+                  The system is designed for rugged outdoor use near the ocean, providing reliable data for conservation research.
+                </p>
                 
                 <div class="project-gallery">
-                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=ESP32+Setup" alt="ESP32 Setup">
-                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Mobile+App" alt="Mobile App">
-                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Sensor+Network" alt="Sensor Network">
+                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Perch+Prototype" alt="Bird Perch Prototype">
+                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Sensor+Integration" alt="Sensor Integration">
+                  <img src="https://placehold.co/400x300/2c3e50/ffffff?text=Field+Testing" alt="Field Testing">
                 </div>
                 
                 <h4>Technical Details</h4>
                 <ul>
-                  <li>ESP32 microcontroller</li>
-                  <li>WiFi and Bluetooth connectivity</li>
-                  <li>React Native mobile app</li>
-                  <li>Temperature, humidity, and motion sensors</li>
-                  <li>MQTT protocol for communication</li>
+                  <li>Load cell sensors for real-time weight measurement</li>
+                  <li>STM32 microcontroller for data processing</li>
+                  <li>Low-power design for field deployment</li>
+                  <li>Stable structure for rocky and sandy terrain</li>
+                  <li>Supports birds weighing up to 1.6 kg</li>
                 </ul>
                 
                 <div class="project-links">
-                  <a href="https://github.com/your-username/smart-home" class="btn" target="_blank">
+                  <a href="https://github.com/your-username/smart-bird-perch" class="btn" target="_blank">
                     <i class="fab fa-github"></i> GitHub Repository
                   </a>
-                  <a href="projects/smart-home-report.pdf" class="btn btn-outline" download>
+                  <a href="projects/smart-bird-perch-report.pdf" class="btn btn-outline" download>
                     <i class="fas fa-file-pdf"></i> Project Report
                   </a>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
