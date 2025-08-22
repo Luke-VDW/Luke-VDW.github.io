@@ -255,10 +255,16 @@
       margin-top: 20px;
     }
     
-    .about-details {
+    /* .about-details {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease;
+    } */
+    .about-details {
+      margin-top: 0rem; /* Adds a gap between about text and details */
+      max-height: none;
+      overflow: visible;
+      transition: none;
     }
     
     .about-details.active {
@@ -718,11 +724,11 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Engineering Student</h1>
-      <p>Hi! I'm Luke, an engineering student passionate about control systems, embedded development, and innovative problem-solving.</p>
+      <h1>Hello world! I'm Luke</h1>
+      <p>An engineering student passionate about control systems, embedded development, and innovative problem-solving.</p>
       <div class="hero-btns">
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <!-- <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a> -->
       </div>
     </div>
     <a href="#about" class="scroll-down">
@@ -739,40 +745,40 @@
           <img src="assets/me.jpg" alt="Luke V">
         </div>
         <div class="about-text">
-          <p>I am a Catholic engineering student who wasn't initially sure what career to pursue after school. I chose engineering because it seemed like a solid path—and I'm so glad I did. I've grown to love the work and challenges it brings.</p>
-          <p>My engineering journey has allowed me to work on various projects involving embedded systems, control theory, and hardware design. I enjoy tackling complex problems and creating efficient, practical solutions.</p>
-          
-          <div class="about-btns">
-            <a href="#contact" class="btn">Get In Touch</a>
-            <a href="cv/LukeV_CV.pdf" class="btn btn-outline" download>
-              <i class="fas fa-download"></i> Download CV
-            </a>
-            <button class="btn btn-outline view-more-btn">More About Me</button>
-          </div>
-          
+          <p>I am a final year engineering student with a passion for problem-solving and innovation. 
+            I have embraced the path of engineering because it allows me to explore challenging projects and develop 
+            practical solutions that can make a difference to poeples lives.</p>
+          <p>My experience spans areas such as embedded systems, control theory, 
+            and hardware design. I enjoy applying my skills to complex problems and learning new technologies along the way.</p>
+
           <div class="about-details">
             <div class="about-details-content">
-              <h4>My Interests & Hobbies</h4>
+              <h4>Hobbies & Interests</h4>
               <p>When I'm not studying or working on projects, I enjoy a variety of activities that help me maintain a balanced lifestyle and continue learning.</p>
-              
-              <div class="about-gallery">
-                <img src="https://placehold.co/300x200/3498db/ffffff?text=Volunteering" alt="Volunteering">
-                <img src="https://placehold.co/300x200/3498db/ffffff?text=Reading" alt="Reading">
-                <img src="https://placehold.co/300x200/3498db/ffffff?text=Outdoors" alt="Outdoor Activities">
-                <img src="https://placehold.co/300x200/3498db/ffffff?text=Electronics" alt="Electronics Projects">
-              </div>
-              
-              <h4>Personal Interests</h4>
               <ul>
-                <li><strong>Volunteering:</strong> I regularly volunteer at my local parish, helping with community events and youth programs.</li>
-                <li><strong>Reading:</strong> I enjoy reading both technical books and fiction, particularly science fiction and historical novels.</li>
-                <li><strong>Outdoor Activities:</strong> Hiking, camping, and exploring nature help me recharge and find inspiration.</li>
-                <li><strong>Electronics Projects:</strong> I often work on personal electronics projects, experimenting with new components and techniques.</li>
+                <li><strong>Church:</strong> I regularly volunteer at my local parish, helping with community events and youth programs.</li>
+                <li><strong>Music:</strong> I enjoy reading both technical books and fiction, particularly science fiction and historical novels.</li>
+                <li><strong>Activities:</strong> Hiking, camping, and exploring nature help me recharge and find inspiration.</li>
+                <li><strong>Projects:</strong> I often work on personal electronics projects, experimenting with new components and techniques.</li>
               </ul>
-              
+              <div class="about-gallery">
+                <img src="assets/st-mikes.jpg" alt="Church">
+                <img src="assets/saxophone.jpg" alt="Music">
+                <img src="assets/me.jpg" alt="Activities">
+                <img src="assets/dryer.jpg" alt="Projects">
+              </div>
               <h4>My Engineering Philosophy</h4>
-              <p>I believe that engineering is about more than just solving technical problems—it's about creating solutions that improve people's lives while being mindful of ethical considerations and environmental impact. My Catholic faith informs my approach to engineering, emphasizing service to others and responsible stewardship of technology.</p>
+              <p>I believe that engineering can be about more than just solving technical problems. I feel that the 
+                the profession has a great capacity for good and can improve people's lives. My Catholic faith informs
+                 my approach to engineering by emphasizing the dignitiy of others and the value of hard work.</p>
             </div>
+          </div>
+
+          <div class="about-btns">
+            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="assets/Luke van der Walt CV.pdf" class="btn btn-outline" download>
+              <i class="fas fa-download"></i> Download CV
+            </a>
           </div>
         </div>
       </div>
